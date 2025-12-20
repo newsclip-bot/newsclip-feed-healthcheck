@@ -1,0 +1,11 @@
+{
+  "name": "newsclip-feed-healthcheck",
+  "version": "0.1.0",
+  "description": "Lightweight URL healthcheck for Newsclip pages (status, latency, bytes).",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
