@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 21, 2025 at 02:05 AM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/eli-sharabi-united-nations-march-2025-israel-hamas-gaza.jpg" alt="Eli Sharabi&#039;s Urgent Warning: The Rising Tide of Antisemitism in Australia" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/eli-sharabis-urgent-warning-the-rising-tide-of-antisemitism-in-australia" title="Eli Sharabi&#039;s Urgent Warning: The Rising Tide of Antisemitism in Australia">Eli Sharabi&#039;s Urgent Warning: The Rising Tide of Antisemitism in Australia</a></h3>
+          <p class="article-excerpt">Eli Sharabi, a former Hamas hostage, sounded the alarm about escalating antisemitism in Australia months prior to the tragic Bondi Beach shooting, urging leaders for action to prevent future hate crimes.</p>
+          <div class="article-hashtags">#Antisemitism #Australia #HateCrime #EliSharabi #BondiBeach</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50724.jpg" alt="The Calculated Chaos: Understanding the Recent Subway Attack in Taiwan" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-calculated-chaos-understanding-the-recent-subway-attack-in-taiwan" title="The Calculated Chaos: Understanding the Recent Subway Attack in Taiwan">The Calculated Chaos: Understanding the Recent Subway Attack in Taiwan</a></h3>
+          <p class="article-excerpt">Recent events in Taiwan have shocked the nation as a calculated subway attack leaves a tragic toll. I delve into the motivations behind the violence and the broader implications for public safety and policy response.</p>
+          <div class="article-hashtags">#TaiwanAttack #PublicSafety #MentalHealth #CommunitySupport #CrisisResponse</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/2010/live/74a5ecd0-dd62-11f0-a8dc-93c15fe68710.jpg" alt="NSW&#039;s Response to Bondi Shooting: A Controversial Path Ahead" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/nsws-response-to-bondi-shooting-a-controversial-path-ahead" title="NSW&#039;s Response to Bondi Shooting: A Controversial Path Ahead">NSW&#039;s Response to Bondi Shooting: A Controversial Path Ahead</a></h3>
+          <p class="article-excerpt">In the wake of Australia&#039;s deadliest shooting in nearly 30 years, New South Wales is set to implement stricter hate speech laws, igniting a fierce debate over freedom of expression versus public safety.</p>
+          <div class="article-hashtags">#BondiShooting #HateSpeech #PublicSafety #FreedomOfExpression #NSWLegislation</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50725.jpg" alt="Escalating Strikes: Russia&#039;s Renewed Assault on Ukraine&#039;s Odesa Region" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/escalating-strikes-russias-renewed-assault-on-ukraines-odesa-region" title="Escalating Strikes: Russia&#039;s Renewed Assault on Ukraine&#039;s Odesa Region">Escalating Strikes: Russia&#039;s Renewed Assault on Ukraine&#039;s Odesa Region</a></h3>
+          <p class="article-excerpt">In a troubling escalation, Russia&#039;s recent strikes on Ukraine&#039;s Odesa region have resulted in devastating human costs, with eight lives claimed and dozens injured. This wave of violence highlights the persistent instabi…</p>
+          <div class="article-hashtags">#OdesaCrisis #UkraineWar #HumanImpact #GeopoliticalTension #GlobalMarketWatch</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50718.jpg" alt="U.S. Strikes in Syria: A Response to Growing Threats from ISIS" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/us-strikes-in-syria-a-response-to-growing-threats-from-isis" title="U.S. Strikes in Syria: A Response to Growing Threats from ISIS">U.S. Strikes in Syria: A Response to Growing Threats from ISIS</a></h3>
+          <p class="article-excerpt">In a significant escalation, the U.S. has launched airstrikes in Syria targeting Islamic State fighters following tragic American casualties. This move underscores the complexities of ongoing military engagement in the…</p>
+          <div class="article-hashtags">#USMilitary #ISIS #Syria #NationalSecurity #Terrorism</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-51072.jpg" alt="Calls for Clarity: The Andrus Selection Controversy" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/calls-for-clarity-the-andrus-selection-controversy" title="Calls for Clarity: The Andrus Selection Controversy">Calls for Clarity: The Andrus Selection Controversy</a></h3>
+          <p class="article-excerpt">The recent selection of Andrus has stirred significant debate. With transparency in governance under scrutiny, we must demand clarity to ensure accountability and trust in our institutions. Join me as we dissect the imp…</p>
+          <div class="article-hashtags">#AndrusSelection #CivicAccountability #TransparencyInGovernment #PublicTrust #JournalismMatters</div>
+          <time class="article-date">December 21, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50798.jpg" alt="Voices of Defiance: The Hunger Strikers and Government Indifference" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/voices-of-defiance-the-hunger-strikers-and-government-indifference" title="Voices of Defiance: The Hunger Strikers and Government Indifference">Voices of Defiance: The Hunger Strikers and Government Indifference</a></h3>
+          <p class="article-excerpt">In the face of unyielding government silence, the hunger strikers from Palestine Action spotlight crucial issues that demand our attention. Their protest embodies the struggle for justice, raising urgent questions about…</p>
+          <div class="article-hashtags">#PalestineAction #HungerStrike #JusticeForAll #CivicEngagement #SocialJustice</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/11/marc-siegel-headshot-miracles.jpg" alt="Miracles Beyond Medicine: A Deeper Look into the Power of Faith" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/miracles-beyond-medicine-a-deeper-look-into-the-power-of-faith" title="Miracles Beyond Medicine: A Deeper Look into the Power of Faith">Miracles Beyond Medicine: A Deeper Look into the Power of Faith</a></h3>
+          <p class="article-excerpt">In my exploration of miracles, I challenge the notion that healing is purely medical. Join me as I delve into the inspiring intersections of faith, human resilience, and the unexpected pathways to recovery that can tran…</p>
+          <div class="article-hashtags">#Miracles #HealthCare #Faith #HumanResilience #MedicalStories</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/c2c6b72e13c98a0a004637d5e53e0cfa44249cb1/196_0_2923_2339/master/2923.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=0ea4a966fa4eef8c34dc16cfb38a98d3" alt="Battersea&#039;s Triumph: Grassroots Power Against Developer Greed" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/batterseas-triumph-grassroots-power-against-developer-greed" title="Battersea&#039;s Triumph: Grassroots Power Against Developer Greed">Battersea&#039;s Triumph: Grassroots Power Against Developer Greed</a></h3>
+          <p class="article-excerpt">In a stunning local victory, residents at the Battersea power station development have shown how grassroots action can challenge developer dominance. This victory is not just a win for one community, but a beacon of hop…</p>
+          <div class="article-hashtags">#Battersea #CommunityEmpowerment #SocialHousing #UrbanDevelopment #LocalPolitics</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/20/multimedia/20Bouie-newsletter-fbtc/20Bouie-newsletter-fbtc-facebookJumbo.jpg" alt="Trump&#039;s Fury: An Analysis of Anger and Accountability" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/trumps-fury-an-analysis-of-anger-and-accountability" title="Trump&#039;s Fury: An Analysis of Anger and Accountability">Trump&#039;s Fury: An Analysis of Anger and Accountability</a></h3>
+          <p class="article-excerpt">In a recent address, President Trump unleashed a torrent of anger at the American people, reflecting a profound disconnect. Let&#039;s dissect the implications of his rhetoric and what it reveals about his administration&#039;s w…</p>
+          <div class="article-hashtags">#Trump #PoliticalAccountability #Election2026 #CivicEngagement #InvestigativeJournalism</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50847.jpg" alt="NBA&#039;s Game-Changing Shift: Injury Reporting and Betting Policies Set to Transform the League" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/nbas-game-changing-shift-injury-reporting-and-betting-policies-set-to-transform-the-league" title="NBA&#039;s Game-Changing Shift: Injury Reporting and Betting Policies Set to Transform the League">NBA&#039;s Game-Changing Shift: Injury Reporting and Betting Policies Set to Transform the League</a></h3>
+          <p class="article-excerpt">The NBA is on the verge of significant changes, tailoring its injury reporting rules and implementing new sports betting policies. These shifts are aimed at addressing tanking and enhancing the authenticity of the game.…</p>
+          <div class="article-hashtags">#NBA #InjuryReporting #SportsBetting #Tanking #BasketballNews</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/a0fc/live/0e89c3d0-dda4-11f0-aa29-47e19247c473.jpg" alt="Maresca Calls for Experience After Chelsea&#039;s Resilient Draw" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/maresca-calls-for-experience-after-chelseas-resilient-draw" title="Maresca Calls for Experience After Chelsea&#039;s Resilient Draw">Maresca Calls for Experience After Chelsea&#039;s Resilient Draw</a></h3>
+          <p class="article-excerpt">In the wake of a turbulent week, Chelsea&#039;s manager Enzo Maresca hints at the necessity for veteran presence in his squad, following a thrilling comeback to secure a point at Newcastle. Could experience be the key to Che…</p>
+          <div class="article-hashtags">#Chelsea #PremierLeague #Football #SportsAnalysis #Maresca</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2248955033.jpg?w=1200crop=1" alt="Kyle Whittingham: The Unexpected Choice for Michigan&#039;s Coaching Future" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/kyle-whittingham-the-unexpected-choice-for-michigans-coaching-future" title="Kyle Whittingham: The Unexpected Choice for Michigan&#039;s Coaching Future">Kyle Whittingham: The Unexpected Choice for Michigan&#039;s Coaching Future</a></h3>
+          <p class="article-excerpt">In the wake of big coaching news, an unexpected contender has surfaced for the Michigan Wolverines&#039; head coach position. Could former Utah coach Kyle Whittingham be the perfect fit for the job? Let&#039;s dive in.</p>
+          <div class="article-hashtags">#MichiganWolverines #KyleWhittingham #CollegeFootball #CoachingNews #SportsAnalysis</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/nascar-greg-biffle-trump-121925-2.jpg" alt="A Heartfelt Remembrance: Greg Biffle&#039;s Legacy After Tragic Plane Crash" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/a-heartfelt-remembrance-greg-biffles-legacy-after-tragic-plane-crash" title="A Heartfelt Remembrance: Greg Biffle&#039;s Legacy After Tragic Plane Crash">A Heartfelt Remembrance: Greg Biffle&#039;s Legacy After Tragic Plane Crash</a></h3>
+          <p class="article-excerpt">As NASCAR mourns the heartbreaking loss of Greg Biffle and his family, I reflect on the deep impact he made in racing and the heartfelt tributes following this tragedy. President Trump remembers Biffle as a &#039;great young…</p>
+          <div class="article-hashtags">#NASCAR #GregBiffle #RacingTragedy #SportsCommunity #Legacy</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/grge-biffle-121825.jpg" alt="Tragic Final Words: The Distressing Message Before Greg Biffle&#039;s Plane Crash" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tragic-final-words-the-distressing-message-before-greg-biffles-plane-crash" title="Tragic Final Words: The Distressing Message Before Greg Biffle&#039;s Plane Crash">Tragic Final Words: The Distressing Message Before Greg Biffle&#039;s Plane Crash</a></h3>
+          <p class="article-excerpt">As we mourn the tragic loss of NASCAR star Greg Biffle and six others, shocking details emerge, including a chilling text sent moments before the crash. This heartfelt piece explores the tragedy&#039;s depths and the lives i…</p>
+          <div class="article-hashtags">#NASCAR #GregBiffle #AviationSafety #TragicLoss #SportsNews</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2025/12/20/d0c848b3-722e-4424-a116-1021dc2c503a/thumbnail/1200x630/aee951c5b3f6091192b8deb47e2376ee/1766250258902.png" alt="Old Crow Medicine Show&#039;s Holiday Spirit Shines in &quot;Corn Whiskey Christmas&quot;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/old-crow-medicine-shows-holiday-spirit-shines-in-corn-whiskey-christmas" title="Old Crow Medicine Show&#039;s Holiday Spirit Shines in &quot;Corn Whiskey Christmas&quot;">Old Crow Medicine Show&#039;s Holiday Spirit Shines in &quot;Corn Whiskey Christmas&quot;</a></h3>
+          <p class="article-excerpt">Two-time Grammy winners Old Crow Medicine Show capture the essence of holiday cheer with their new song &quot;Corn Whiskey Christmas&quot; from the seasonal album &quot;OCMS XMAS.&quot; This festive performance encapsulates the band&#039;s time…</p>
+          <div class="article-hashtags">#OldCrowMedicineShow #CornWhiskeyChristmas #OCMSXMAS #Americana #HolidayMusic</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/0260/live/c8a829a0-d98f-11f0-bde3-d30208105bfe.jpg" alt="Dancing Into the Spotlight: The Final Reckoning on Strictly Come Dancing" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/dancing-into-the-spotlight-the-final-reckoning-on-strictly-come-dancing" title="Dancing Into the Spotlight: The Final Reckoning on Strictly Come Dancing">Dancing Into the Spotlight: The Final Reckoning on Strictly Come Dancing</a></h3>
+          <p class="article-excerpt">As the final of Strictly Come Dancing approaches, the tension mounts with celebrities Amber Davies, George Clarke, and Karen Carney competing for glory. It&#039;s an emotional farewell for hosts Tess Daly and Claudia Winklem…</p>
+          <div class="article-hashtags">#StrictlyComeDancing #AmberDavies #KarenCarney #GeorgeClarke #DanceFinal #CulturalMoments</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/20/multimedia/20cul-avatar-villain-02-lfqm/20cul-avatar-villain-02-lfqm-facebookJumbo.jpg" alt="Oona Chaplin&#039;s Fiery Transformation as Varang in &#039;Avatar: Fire and Ash&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/oona-chaplins-fiery-transformation-as-varang-in-avatar-fire-and-ash" title="Oona Chaplin&#039;s Fiery Transformation as Varang in &#039;Avatar: Fire and Ash&#039;">Oona Chaplin&#039;s Fiery Transformation as Varang in &#039;Avatar: Fire and Ash&#039;</a></h3>
+          <p class="article-excerpt">Channeling her fierce emotions from personal experiences, Oona Chaplin&#039;s portrayal of Varang in &#039;Avatar: Fire and Ash&#039; becomes a mesmerizing blend of strength and vulnerability, truly enticing audiences to witness her t…</p>
+          <div class="article-hashtags">#Avatar #OonaChaplin #FilmReview #CinematicArt #CulturalCommentary</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://www.rollingstone.com/wp-content/uploads/2025/12/LolaYoungUpdatePublicAppearance-1.jpg?w=1600&amp;h=900&amp;crop=1" alt="Lola Young&#039;s Inspiring Comeback: &#039;Life is a Journey&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/lola-youngs-inspiring-comeback-life-is-a-journey" title="Lola Young&#039;s Inspiring Comeback: &#039;Life is a Journey&#039;">Lola Young&#039;s Inspiring Comeback: &#039;Life is a Journey&#039;</a></h3>
+          <p class="article-excerpt">Singer-songwriter Lola Young shares her heartfelt message of gratitude and determination to return to the stage after her recent health scare. &#039;Life is a journey, nothing is perfect, but today I am doing well,&#039; she refl…</p>
+          <div class="article-hashtags">#LolaYoung #MusicNews #ArtistRecovery #MentalHealthAwareness #SupportArtists</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50929.jpg" alt="Behind the Curtain: The Finalists of &#039;The Road&#039; Reveal Their Finale Secrets" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/behind-the-curtain-the-finalists-of-the-road-reveal-their-finale-secrets" title="Behind the Curtain: The Finalists of &#039;The Road&#039; Reveal Their Finale Secrets">Behind the Curtain: The Finalists of &#039;The Road&#039; Reveal Their Finale Secrets</a></h3>
+          <p class="article-excerpt">As the buzz around &#039;The Road&#039; intensifies, the finalists share exclusive insights into their song selections and what we can expect from their finale performances. It&#039;s a revelatory peek into the art behind the music, o…</p>
+          <div class="article-hashtags">#TheRoad #MusicFinale #RealityTV #CulturalCommentary #Finalists</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-51214.jpg" alt="Supporting Local and Combating Wildfires: A Look at Colorado&#039;s Christmas Tree Lot" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/supporting-local-and-combating-wildfires-a-look-at-colorados-christmas-tree-lot" title="Supporting Local and Combating Wildfires: A Look at Colorado&#039;s Christmas Tree Lot">Supporting Local and Combating Wildfires: A Look at Colorado&#039;s Christmas Tree Lot</a></h3>
+          <p class="article-excerpt">A Colorado Christmas tree lot not only provides festive trees but also plays a crucial role in wildfire management. By sourcing locally, they help reduce fuel loads and protect our environment, illustrating the powerful…</p>
+          <div class="article-hashtags">#LocalBusiness #WildfireMitigation #SustainableLiving #ChristmasTrees</div>
+          <time class="article-date">December 21, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/a7d6/live/ffb4a2c0-dccd-11f0-8119-7990a250d38d.jpg" alt="London&#039;s West End Sees a Christmas Shopping Surge Amid National Decline" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/londons-west-end-sees-a-christmas-shopping-surge-amid-national-decline" title="London&#039;s West End Sees a Christmas Shopping Surge Amid National Decline">London&#039;s West End Sees a Christmas Shopping Surge Amid National Decline</a></h3>
+          <p class="article-excerpt">While UK high streets report a decline in foot traffic during the festive shopping season, London&#039;s West End defies the trend with notable gains. Shoppers flock to central London, making it a vibrant hub for holiday pur…</p>
+          <div class="article-hashtags">#ShoppingTrends #WestEnd #ChristmasShopping #RetailAnalysis #ConsumerBehavior</div>
+          <time class="article-date">December 21, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/20/multimedia/00mnuchin-zcjp/00mnuchin-zcjp-facebookJumbo.jpg" alt="Remembering Robert Mnuchin: From Wall Street Titan to Art World Icon" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/remembering-robert-mnuchin-from-wall-street-titan-to-art-world-icon" title="Remembering Robert Mnuchin: From Wall Street Titan to Art World Icon">Remembering Robert Mnuchin: From Wall Street Titan to Art World Icon</a></h3>
+          <p class="article-excerpt">The passing of Robert Mnuchin marks the end of an era, bridging the worlds of finance and fine art. A Goldman Sachs partner turned art dealer, his legacy is defined by groundbreaking deals and a profound passion for art.</p>
+          <div class="article-hashtags">#RobertMnuchin #ArtWorld #BlockTrading #GoldmanSachs #MarketInsights</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50955.jpg" alt="Leadership Transition: Mutzenberger Takes the Helm at Eden Prairie Business Services" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/leadership-transition-mutzenberger-takes-the-helm-at-eden-prairie-business-services" title="Leadership Transition: Mutzenberger Takes the Helm at Eden Prairie Business Services">Leadership Transition: Mutzenberger Takes the Helm at Eden Prairie Business Services</a></h3>
+          <p class="article-excerpt">In a significant reshuffle, Chris Mutzenberger is set to return as executive director of business services following the resignation of Adams. This transition not only signals a new direction for the department but also…</p>
+          <div class="article-hashtags">#BusinessLeadership #EdenPrairie #CommunityImpact #LocalGovernment #ExecutiveTransition</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-50948.jpg" alt="Treasury&#039;s &#039;Trump Accounts&#039;: A New Controversy in Economic Policy" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/treasurys-trump-accounts-a-new-controversy-in-economic-policy" title="Treasury&#039;s &#039;Trump Accounts&#039;: A New Controversy in Economic Policy">Treasury&#039;s &#039;Trump Accounts&#039;: A New Controversy in Economic Policy</a></h3>
+          <p class="article-excerpt">The Treasury Department&#039;s push for businesses and wealthy individuals to contribute to &#039;Trump Accounts&#039; raises questions about its implications for our economy and society. Join me as I explore the complexities behind t…</p>
+          <div class="article-hashtags">#EconomicPolicy #TrumpAccounts #SocialEquity #BusinessImpact #IncomeInequality</div>
+          <time class="article-date">December 20, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
