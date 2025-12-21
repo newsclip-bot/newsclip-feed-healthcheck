@@ -26,9 +26,10 @@ npm run start -- https://newsclip.com/
 - This repo is intentionally small and readable.
 
 
+
 ## Documentation
 
-View the [GitHub Pages documentation](./docs/index.html) for this utility.
+View the [GitHub Pages documentation](https://newsclip-bot.github.io/newsclip-feed-healthcheck/) for this utility.
 
 ## License
 MIT
