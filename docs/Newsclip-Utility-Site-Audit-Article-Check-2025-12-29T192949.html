@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 29, 2025 at 07:29 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55776.jpg" alt="Ceasefire in Jeopardy: Thailand and Cambodia Trade Accusations" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ceasefire-in-jeopardy-thailand-and-cambodia-trade-accusations" title="Ceasefire in Jeopardy: Thailand and Cambodia Trade Accusations">Ceasefire in Jeopardy: Thailand and Cambodia Trade Accusations</a></h3>
+          <p class="article-excerpt">Tensions flare anew as Thailand accuses Cambodia of breaching their recently signed ceasefire agreement, raising concerns for stability in the region. What does this mean for both nations and their shared borders? Explo…</p>
+          <div class="article-hashtags">#Thailand #Cambodia #Ceasefire #BorderConflict #HumanImpact</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55768.jpg" alt="Severe Weather Hits Southern Minnesota: Travel Disruptions and Record Snowfall" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/severe-weather-hits-southern-minnesota-travel-disruptions-and-record-snowfall" title="Severe Weather Hits Southern Minnesota: Travel Disruptions and Record Snowfall">Severe Weather Hits Southern Minnesota: Travel Disruptions and Record Snowfall</a></h3>
+          <p class="article-excerpt">Southern Minnesota grapples with no-travel advisories as extreme weather blankets the region, posing significant travel risks and operational challenges. With snowfall exceeding 17 inches in some areas, the impacts are…</p>
+          <div class="article-hashtags">#Snowstorm #MinnesotaWeather #TravelAdvisory #EmergencyResponse #ClimatePreparedness</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/adfd/live/7e288ec0-e44c-11f0-a8dc-93c15fe68710.jpg" alt="Albin Kurti&#039;s Resounding Victory: A New Chapter for Kosovo" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/albin-kurtis-resounding-victory-a-new-chapter-for-kosovo" title="Albin Kurti&#039;s Resounding Victory: A New Chapter for Kosovo">Albin Kurti&#039;s Resounding Victory: A New Chapter for Kosovo</a></h3>
+          <p class="article-excerpt">Kosovo&#039;s political landscape shifts dramatically as Albin Kurti and the Vetevendosje party secure a landslide victory, marking a potential turning point after months of instability.</p>
+          <div class="article-hashtags">#KosovoElection #AlbinKurti #Vetevendosje #PoliticalStability #Governance</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55504.jpg" alt="Is Peace on the Horizon? Trump and Zelensky&#039;s Uncertain Negotiations" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/is-peace-on-the-horizon-trump-and-zelenskys-uncertain-negotiations" title="Is Peace on the Horizon? Trump and Zelensky&#039;s Uncertain Negotiations">Is Peace on the Horizon? Trump and Zelensky&#039;s Uncertain Negotiations</a></h3>
+          <p class="article-excerpt">Amidst heavy tensions, Trump claims a potential peace deal between Russia and Ukraine may be within reach following his meeting with Zelensky. However, significant hurdles remain, raising questions about the viability o…</p>
+          <div class="article-hashtags">#PeaceTalks #Ukraine #Russia #Diplomacy #Zelensky #Trump</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/AP21043665045210.jpg?w=1200&amp;crop=1" alt="Tragic Avalanche Claims Life of Mammoth Ski Patroller" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tragic-avalanche-claims-life-of-mammoth-ski-patroller" title="Tragic Avalanche Claims Life of Mammoth Ski Patroller">Tragic Avalanche Claims Life of Mammoth Ski Patroller</a></h3>
+          <p class="article-excerpt">Cole Murphy, a dedicated 30-year-old ski patroller at Mammoth Mountain, tragically lost his life following an avalanche incident during safety operations. A reminder of the inherent dangers in the Alaskan winter, his pa…</p>
+          <div class="article-hashtags">#SkiSafety #AvalancheAwareness #MammothMountain #Community #WinterSports</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/10fb219a742543041485633bdb7c71ec8fccfd0f/0_0_4549_3640/master/4549.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&amp;enable=upscale&amp;s=760d0e8fc9156013c9882a175f4d98c4" alt="Unveiling the Truth Behind Dagenham&#039;s Machinists: More Than Just Equal Pay" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unveiling-the-truth-behind-dagenhams-machinists-more-than-just-equal-pay" title="Unveiling the Truth Behind Dagenham&#039;s Machinists: More Than Just Equal Pay">Unveiling the Truth Behind Dagenham&#039;s Machinists: More Than Just Equal Pay</a></h3>
+          <p class="article-excerpt">In a detailed exploration, we dissect the motivations behind the historic strike of Dagenham&#039;s sewing machinists, revealing that their fight transcended equal pay to seek recognition for their skilled labor. Dive into t…</p>
+          <div class="article-hashtags">#EqualPay #WomenInWorkplace #DagenhamMachinists #Feminism #GenderJustice</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/d575e8e218106a3c6ebe3a2d6b4da5d4e65d4af3/465_0_4684_3746/master/4684.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=3b8c0b80fa9bc99eeea7290169a1ae22" alt="Navigating Language&#039;s Evolution: From Twixmas to Style Guide Dilemmas" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/navigating-languages-evolution-from-twixmas-to-style-guide-dilemmas" title="Navigating Language&#039;s Evolution: From Twixmas to Style Guide Dilemmas">Navigating Language&#039;s Evolution: From Twixmas to Style Guide Dilemmas</a></h3>
+          <p class="article-excerpt">As language morphs, we must adapt—the debate over &#039;Twixmas&#039; vs. &#039;Twixtmas&#039; and style guide dilemmas reflect our shifting societal norms. Join me in exploring the intricacies that shape our daily discourse.</p>
+          <div class="article-hashtags">#LanguageEvolution #StyleGuide #CivicEngagement #InvestigativeJournalism #CulturalIntegrity</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/bc05198826a2d670434d879c45ecd9bc223d933d/0_0_5000_4000/master/5000.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=eb31f67fe3d82b1af6cfcd255b22149f" alt="Defending the BBC: A Cultural Institution in Crisis" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/defending-the-bbc-a-cultural-institution-in-crisis" title="Defending the BBC: A Cultural Institution in Crisis">Defending the BBC: A Cultural Institution in Crisis</a></h3>
+          <p class="article-excerpt">As we face the challenges of a changing media landscape, it&#039;s crucial to recognize the BBC&#039;s unique role in defining our culture and identity. It&#039;s not just about entertainment; it&#039;s about storytelling — the kind that c…</p>
+          <div class="article-hashtags">#BBC #PublicService #MediaCulture #CulturalIdentity #InvestigativeJournalism</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/18/opinion/18bronzini-vendor/18bronzini-vendor-facebookJumbo.jpg" alt="Is Harvard&#039;s New Campus Orthodoxy More Stifling Than Ever?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/is-harvards-new-campus-orthodoxy-more-stifling-than-ever" title="Is Harvard&#039;s New Campus Orthodoxy More Stifling Than Ever?">Is Harvard&#039;s New Campus Orthodoxy More Stifling Than Ever?</a></h3>
+          <p class="article-excerpt">Once seen as a win for free speech, Harvard&#039;s latest shifts reveal a renewed orthodoxy that&#039;s even more oppressive. Have we traded one form of censorship for another?</p>
+          <div class="article-hashtags">#CampusSpeech #AcademicFreedom #Harvard #DiversityInclusion #CancelCulture</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/29/multimedia/29RichardFriedman-kgwq/29RichardFriedman-kgwq-facebookJumbo.jpg" alt="Therapists and the Final Curtain: Why Planning for Death Matters" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/therapists-and-the-final-curtain-why-planning-for-death-matters" title="Therapists and the Final Curtain: Why Planning for Death Matters">Therapists and the Final Curtain: Why Planning for Death Matters</a></h3>
+          <p class="article-excerpt">Mortality is a topic many therapists shy away from, yet the sudden death of a therapist can unravel the very fabric of a patient&#039;s support system. It&#039;s time to confront the uncomfortable truth: therapists must prepare f…</p>
+          <div class="article-hashtags">#MentalHealth #Therapy #Loss #CivicResponsibility #Healthcare</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55607.jpg" alt="Ravens-Steelers Rivalry Takes Center Stage in Week 18 Showdown" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ravens-steelers-rivalry-takes-center-stage-in-week-18-showdown" title="Ravens-Steelers Rivalry Takes Center Stage in Week 18 Showdown">Ravens-Steelers Rivalry Takes Center Stage in Week 18 Showdown</a></h3>
+          <p class="article-excerpt">As the NFL heads into Week 18, the spotlight shines brightly on the epic Ravens-Steelers clash, flexed to Sunday night. With playoff implications on the line, this iconic rivalry promises to deliver edge-of-your-seat ac…</p>
+          <div class="article-hashtags">#NFL #Ravens #Steelers #FootballRivalry #Week18</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/beb8/live/2beb48b0-e428-11f0-b67b-690eb873de1b.jpg" alt="Calvert-Lewin&#039;s Resurgence: Will He Make the England Squad for the World Cup?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/calvert-lewins-resurgence-will-he-make-the-england-squad-for-the-world-cup" title="Calvert-Lewin&#039;s Resurgence: Will He Make the England Squad for the World Cup?">Calvert-Lewin&#039;s Resurgence: Will He Make the England Squad for the World Cup?</a></h3>
+          <p class="article-excerpt">Dominic Calvert-Lewin, the Premier League&#039;s leading English scorer, is making waves. As he fights to reclaim his spot in the national squad five years after his last cap, can he secure a place for the World Cup?</p>
+          <div class="article-hashtags">#CalvertLewin #PremierLeague #EnglandSquad #WorldCup2026 #Football</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1228%2Fr1594255_1296x729_16%2D9.jpg" alt="Packers&#039; QB Dilemma: Malik Willis Shines but Future Uncertain" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/packers-qb-dilemma-malik-willis-shines-but-future-uncertain" title="Packers&#039; QB Dilemma: Malik Willis Shines but Future Uncertain">Packers&#039; QB Dilemma: Malik Willis Shines but Future Uncertain</a></h3>
+          <p class="article-excerpt">In the aftermath of Malik Willis&#039; impressive performance against the Ravens, Packers head coach Matt LaFleur is left grappling with a pivotal decision on the starting quarterback for the regular-season finale. As playof…</p>
+          <div class="article-hashtags">#Packers #NFL #MalikWillis #Quarterback #Playoffs</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/jaxson-dart-giants-raiders.jpg" alt="Giants Celebrate Amidst Draft Cost: A Glimpse into the NFL&#039;s Intrigue" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/giants-celebrate-amidst-draft-cost-a-glimpse-into-the-nfls-intrigue" title="Giants Celebrate Amidst Draft Cost: A Glimpse into the NFL&#039;s Intrigue">Giants Celebrate Amidst Draft Cost: A Glimpse into the NFL&#039;s Intrigue</a></h3>
+          <p class="article-excerpt">The New York Giants ended their nine-game losing streak with a resounding win over the Las Vegas Raiders, but it came at a steep price: the No. 1 overall pick slips away. Dive into the emotional rollercoaster of victory…</p>
+          <div class="article-hashtags">#NewYorkGiants #LasVegasRaiders #NFLDraft2026 #JaxsonDart #SportsNews</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1027%2Fr1566909_1296x729_16%2D9.jpg" alt="Marcus Freeman&#039;s Commitment: Notre Dame&#039;s Winning Future Secured" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/marcus-freemans-commitment-notre-dames-winning-future-secured" title="Marcus Freeman&#039;s Commitment: Notre Dame&#039;s Winning Future Secured">Marcus Freeman&#039;s Commitment: Notre Dame&#039;s Winning Future Secured</a></h3>
+          <p class="article-excerpt">In a bold move signaling stability amidst NFL rumors, Notre Dame&#039;s head coach Marcus Freeman has signed a restructured deal to stay with the Fighting Irish through 2026, bringing a renewed focus to this storied program.…</p>
+          <div class="article-hashtags">#NotreDame #MarcusFreeman #CollegeFootball #FightingIrish #NCAAF</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/11/dean-martin-with-peggy-crosby-and-phil-crosby-jr.jpg" alt="Dean Martin&#039;s McDonald&#039;s Debacle: A Drive-Thru Disaster for Bing Crosby&#039;s Grandson" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/dean-martins-mcdonalds-debacle-a-drive-thru-disaster-for-bing-crosbys-grandson" title="Dean Martin&#039;s McDonald&#039;s Debacle: A Drive-Thru Disaster for Bing Crosby&#039;s Grandson">Dean Martin&#039;s McDonald&#039;s Debacle: A Drive-Thru Disaster for Bing Crosby&#039;s Grandson</a></h3>
+          <p class="article-excerpt">In an outrageous tale from the 1970s, Dean Martin famously crunched his luxury Stutz car in a McDonald&#039;s drive-thru while on a mission to fetch a burger for Bing Crosby&#039;s grandson. Let&#039;s dive deep into this remarkable m…</p>
+          <div class="article-hashtags">#DeanMartin #BingCrosby #RatPack #EntertainmentHistory #PopCulture</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55441.jpg" alt="A Deep Dive into Tencent Music&#039;s Market Movements and Cultural Relevance" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/a-deep-dive-into-tencent-musics-market-movements-and-cultural-relevance" title="A Deep Dive into Tencent Music&#039;s Market Movements and Cultural Relevance">A Deep Dive into Tencent Music&#039;s Market Movements and Cultural Relevance</a></h3>
+          <p class="article-excerpt">As Tencent Music Entertainment Group faces significant stock trades, it&#039;s crucial to explore the broader implications for the music industry and cultural landscape. Join me as we unpack what this means for artists and l…</p>
+          <div class="article-hashtags">#TencentMusic #EntertainmentIndustry #CulturalCritique #MusicStreaming #MarketTrends</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55698.jpg" alt="Turmoil at Star Entertainment: A Leadership Shake-Up" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/turmoil-at-star-entertainment-a-leadership-shake-up" title="Turmoil at Star Entertainment: A Leadership Shake-Up">Turmoil at Star Entertainment: A Leadership Shake-Up</a></h3>
+          <p class="article-excerpt">Star Entertainment is facing uncertainty as both its CFO and COO resign, signaling potential turbulence in its strategic direction. What does this mean for the company&#039;s creative future and its response to market pressu…</p>
+          <div class="article-hashtags">#StarEntertainment #LeadershipChange #EntertainmentIndustry #CFO #COOResignation</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/d5a8/live/5e076ce0-e0b6-11f0-a5d4-dbc340b0ceeb.jpg" alt="2026: A Year Set to Redefine Television with Unmissable Shows" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/2026-a-year-set-to-redefine-television-with-unmissable-shows" title="2026: A Year Set to Redefine Television with Unmissable Shows">2026: A Year Set to Redefine Television with Unmissable Shows</a></h3>
+          <p class="article-excerpt">Prepare for a thrilling cinematic year in 2026 as beloved series return and exciting new ones debut. Here are the 18 highlights that will define television in the coming year.</p>
+          <div class="article-hashtags">#2026Television #MustWatchTV #Entertainment #TVHighlights #CulturalMoments</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/a826/live/a948cc80-db5c-11f0-aae2-2191c0e48a3b.jpg" alt="Claudia Winkleman Unveils &#039;Extraordinary&#039; New Twists in The Traitors" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/claudia-winkleman-unveils-extraordinary-new-twists-in-the-traitors" title="Claudia Winkleman Unveils &#039;Extraordinary&#039; New Twists in The Traitors">Claudia Winkleman Unveils &#039;Extraordinary&#039; New Twists in The Traitors</a></h3>
+          <p class="article-excerpt">Get ready to gasp as Claudia Winkleman hints at shocking new twists in the upcoming season of The Traitors, featuring an intriguing new red cloak. Will the faithfulness of contestants hold up against the fresh surprises…</p>
+          <div class="article-hashtags">#TheTraitors #ClaudiaWinkleman #RealityTV #Television #Entertainment</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-56036.jpg" alt="German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/german-businesses-brace-for-unavoidable-job-cuts-by-2026-amid-ongoing-economic-struggles" title="German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles">German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles</a></h3>
+          <p class="article-excerpt">As the economic crisis continues to loom over Germany, business leaders predict widespread job cuts in 2026. This sobering outlook highlights the human consequences of prolonged financial instability.</p>
+          <div class="article-hashtags">#GermanEconomy #JobCuts #BusinessForecast #EconomicCrisis #EmploymentImpact</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55710.jpg" alt="California&#039;s Proposed Wealth Tax: A Call to Action from Tech Titans" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/californias-proposed-wealth-tax-a-call-to-action-from-tech-titans" title="California&#039;s Proposed Wealth Tax: A Call to Action from Tech Titans">California&#039;s Proposed Wealth Tax: A Call to Action from Tech Titans</a></h3>
+          <p class="article-excerpt">As California contemplates a 5% tax on the wealth of its richest residents, tech billionaires are voicing their concerns—and threatening to leave the state. What does this mean for California&#039;s economy and its future as…</p>
+          <div class="article-hashtags">#CaliforniaTax #TechBillionaires #WealthTax #Innovation #Economy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-56087.jpg" alt="Unlocking AI Potential: The Ultimate Operations Blueprint" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unlocking-ai-potential-the-ultimate-operations-blueprint" title="Unlocking AI Potential: The Ultimate Operations Blueprint">Unlocking AI Potential: The Ultimate Operations Blueprint</a></h3>
+          <p class="article-excerpt">In today&#039;s fast-paced market, AI is not just optional; it&#039;s essential. The AI Operations Blueprint offers a structured pathway for leaders to transform their AI ideas into actionable strategies in just 90 days. Discover…</p>
+          <div class="article-hashtags">#AI #BusinessStrategy #Innovation #Leadership #DigitalTransformation</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/9f16/live/d0f412a0-e492-11f0-a06d-4903df3f724c.jpg" alt="Rising Pothole Claims: A 90% Surge and Underlying Issues" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/rising-pothole-claims-a-90-surge-and-underlying-issues" title="Rising Pothole Claims: A 90% Surge and Underlying Issues">Rising Pothole Claims: A 90% Surge and Underlying Issues</a></h3>
+          <p class="article-excerpt">New data reveals a staggering 90% rise in pothole claims over three years, but payouts remain elusive for most motorists. What&#039;s driving this trend and what does it mean for our roads?</p>
+          <div class="article-hashtags">#Potholes #RoadSafety #LocalGovernment #Infrastructure #Motoring</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55470.jpg" alt="Celebrating Mando Martinez: A Journey to Law School Success" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/celebrating-mando-martinez-a-journey-to-law-school-success" title="Celebrating Mando Martinez: A Journey to Law School Success">Celebrating Mando Martinez: A Journey to Law School Success</a></h3>
+          <p class="article-excerpt">Join me in congratulating Mando Martinez on his remarkable achievement of graduating from law school. This milestone is not just a personal triumph, but a beacon of inspiration for many in the community. Discover how hi…</p>
+          <div class="article-hashtags">#Education #Community #Inspiration #LawSchool #SuccessStory</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
